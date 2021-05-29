@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "35188606239",
+    "project_id": "loper-195aa",
+    "storage_bucket": "loper-195aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35188606239:android:4b8fa5695f525f32899c2a",
+        "android_client_info": {
+          "package_name": "com.dco.aplicatiesdv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35188606239-a101o6dploikrvvdcsholg4094pihh6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK2taxtSj4oXVssGOK_SBDjy-jdVj-vYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35188606239-a101o6dploikrvvdcsholg4094pihh6q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

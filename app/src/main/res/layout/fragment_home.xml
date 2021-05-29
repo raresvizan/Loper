@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_green">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_green">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:text="Home"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line_menu"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_below="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your friendly Loper's Activity"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/line_menu"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtDescription"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frameAction1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_avatar1"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="raresvisan"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/name_text"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+1 new recommended activity nearby."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginStart="113dp"
+                    android:layout_marginTop="55dp"/>
+
+            </FrameLayout>
+
+            <View
+                android:id="@+id/lineAction1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_below="@+id/frameAction1" />
+
+            <FrameLayout
+                android:id="@+id/frameAction2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/lineAction1">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_avatar2"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="radu_cretu"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/name_text"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+1 new recommended activity nearby."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginStart="113dp"
+                    android:layout_marginTop="55dp"/>
+
+            </FrameLayout>
+
+            <View
+                android:id="@+id/lineAction2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_below="@+id/frameAction2" />
+
+            <FrameLayout
+                android:id="@+id/frameAction3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/lineAction2">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_avatar3"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="matei.manaila"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/name_text"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+2 new recommended activity nearby."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginStart="113dp"
+                    android:layout_marginTop="55dp"/>
+
+            </FrameLayout>
+
+            <View
+                android:id="@+id/lineAction3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_below="@+id/frameAction3" />
+
+            <FrameLayout
+                android:id="@+id/frameAction4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/lineAction3">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_avatar4"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="horiapetrescu"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/name_text"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+1 new recommended activity nearby."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginStart="113dp"
+                    android:layout_marginTop="55dp"/>
+
+            </FrameLayout>
+
+            <View
+                android:id="@+id/lineAction4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_below="@+id/frameAction4" />
+
+            <FrameLayout
+                android:id="@+id/frameAction5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/lineAction4">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_avatar5"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ioana_stoian"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/name_text"
+                    android:layout_marginStart="125dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+3 new recommended activity nearby."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginStart="113dp"
+                    android:layout_marginTop="55dp"/>
+
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

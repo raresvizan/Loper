@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_green"
+    tools:context=".SearchActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/background_green"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:text="Search"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line_menu"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_below="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/txtSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search by name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/name_text"
+        android:layout_below="@+id/line_menu"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_searchfill"
+        android:layout_below="@+id/txtSearch"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp" />
+
+    <TextView
+        android:id="@+id/txtSearch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search using filters"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/name_text"
+        android:layout_below="@+id/edtSearch"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_search"
+        android:layout_below="@+id/edtSearch"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="35dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtSearch2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textStyle="bold"
+                android:textColor="@color/name_text"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_below="@+id/txtPrice"
+                android:layout_marginTop="15dp"
+                android:thumbTint="@color/grey"
+                android:progressTint="@color/grey"
+                android:progress="50"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="low"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@+id/seekbar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="medium"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@+id/seekbar"/>
+
+            <TextView
+                android:id="@+id/txtSeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:text="high"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@+id/seekbar"/>
+
+            <TextView
+                android:id="@+id/txtPopulation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Population"
+                android:textStyle="bold"
+                android:textColor="@color/name_text"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/txtSeek" />
+
+            <SeekBar
+                android:id="@+id/seekbar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_below="@+id/txtPopulation"
+                android:layout_marginTop="15dp"
+                android:thumbTint="@color/grey"
+                android:progressTint="@color/grey"
+                android:progress="50"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="empty"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@+id/seekbar2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="ok"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@+id/seekbar2"/>
+
+            <TextView
+                android:id="@+id/txtSeek2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:text="crowded"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@+id/seekbar2"/>
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nice view."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:buttonTint="@color/black"
+                android:layout_below="@id/txtSeek2"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="terrace."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:buttonTint="@color/black"
+                android:layout_below="@id/radio1"
+                android:layout_marginStart="30dp"/>
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no smoking."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:buttonTint="@color/black"
+                android:layout_below="@id/radio2"
+                android:layout_marginStart="30dp" />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nice view."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:buttonTint="@color/black"
+                android:layout_below="@id/radio3"
+                android:layout_marginStart="30dp" />
+
+            <RadioButton
+                android:id="@+id/radio5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="friendly people.."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:buttonTint="@color/black"
+                android:layout_below="@id/radio4"
+                android:layout_marginStart="30dp" />
+
+            <RadioButton
+                android:id="@+id/radio6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="recommended by friends.."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:buttonTint="@color/black"
+                android:layout_below="@id/radio5"
+                android:layout_marginStart="30dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="recommended by celebrities.."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:buttonTint="@color/black"
+                android:layout_below="@id/radio6"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="30dp"/>
+
+            <RadioButton
+                android:id="@+id/radio7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="car park."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:buttonTint="@color/black"
+                android:layout_below="@id/txtSeek2"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"/>
+
+            <RadioButton
+                android:id="@+id/radio8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="snacks."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:buttonTint="@color/black"
+                android:layout_below="@id/radio7"
+                android:layout_marginEnd="50dp"
+                android:layout_alignParentEnd="true"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="proximity."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:buttonTint="@color/black"
+                android:layout_below="@id/radio8"
+                android:layout_marginEnd="30dp"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuggestFragment">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_green">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="250dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:text="New Suggestion"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line_menu"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_below="@+id/frameLayout" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/line_menu"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_green">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select the category of your\nnew suggestion :)"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameLayout2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtCategory1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Going out"
+                android:textStyle="bold"
+                android:textColor="@color/name_text"
+                android:textSize="20sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <FrameLayout
+                android:id="@+id/frameCategory1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txtCategory1">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_restaurants"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="restaurants."
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="125dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </FrameLayout>
+
+            <View
+                android:id="@+id/lineCategory1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_below="@+id/frameCategory1" />
+
+            <FrameLayout
+                android:id="@+id/frameCategory2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/lineCategory1">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_coffee"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="coffee places."
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="125dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </FrameLayout>
+
+            <View
+                android:id="@+id/lineCategory2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_below="@+id/frameCategory2" />
+
+            <FrameLayout
+                android:id="@+id/frameCategory3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/lineCategory2">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_drinks"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="drinks."
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="125dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtCategory2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instagrammable spots"
+                android:textStyle="bold"
+                android:textColor="@color/name_text"
+                android:textSize="20sp"
+                android:layout_marginStart="30dp"
+                android:layout_below="@+id/frameCategory3"
+                android:layout_marginTop="20dp"/>
+
+            <FrameLayout
+                android:id="@+id/frameCategory4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/txtCategory2">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_camera"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="beautiful buildings."
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="125dp"
+                    android:layout_gravity="center_vertical"/>
+            </FrameLayout>
+
+            <View
+                android:id="@+id/lineCategory4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_below="@+id/frameCategory4" />
+
+            <FrameLayout
+                android:id="@+id/frameCategory5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/lineCategory4">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_camera"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="picnic spots."
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="125dp"
+                    android:layout_gravity="center_vertical"/>
+            </FrameLayout>
+
+            <View
+                android:id="@+id/lineCategory5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_below="@+id/frameCategory5" />
+
+            <FrameLayout
+                android:id="@+id/frameCategory6"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/lineCategory5">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_camera"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="parks."
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="125dp"
+                    android:layout_gravity="center_vertical"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
